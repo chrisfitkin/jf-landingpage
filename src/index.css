@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* JaguarForms Brand Colors */
+@theme {
+  --color-jaguar-black: #0a0a0a;
+  --color-jaguar-charcoal: #1a1a1a;
+  --color-jaguar-dark: #242424;
+  --color-jaguar-gold: #d4a746;
+  --color-jaguar-gold-light: #e8c779;
+  --color-jaguar-amber: #b8942f;
+  --color-jaguar-gray: #6b7280;
+  --color-jaguar-light: #f5f5f5;
+
+  --font-family-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-body);
+  background-color: var(--color-jaguar-black);
+  color: var(--color-jaguar-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-jaguar-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-jaguar-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-jaguar-gold-light);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-jaguar-gold);
+  color: var(--color-jaguar-black);
+}
