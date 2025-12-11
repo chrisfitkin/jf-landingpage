@@ -9,8 +9,20 @@ import { HowItWorks } from './components/HowItWorks';
 import { CTAStrip } from './components/CTAStrip';
 import { WaitlistForm } from './components/WaitlistForm';
 import { Footer } from './components/Footer';
+import { LogoPreview } from './components/LogoPreview';
+
+// Set to true to preview logo options, false for normal landing page
+const SHOW_LOGO_PREVIEW = false;
 
 function App() {
+  if (SHOW_LOGO_PREVIEW) {
+    return (
+      <div className="min-h-screen bg-jaguar-black">
+        <LogoPreview />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-jaguar-black">
       <Header />

@@ -1,3 +1,5 @@
+import { MotionMark } from './logos/MotionMark';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -7,9 +9,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-jaguar-gold to-jaguar-amber rounded-lg flex items-center justify-center">
-              <span className="text-jaguar-black font-bold text-sm">J</span>
-            </div>
+            <MotionMark size={32} />
             <span className="text-lg font-bold text-jaguar-light">JaguarForms</span>
           </div>
 
